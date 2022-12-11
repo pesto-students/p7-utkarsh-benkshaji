@@ -1,0 +1,58 @@
+.text{
+    position: absolute;
+    margin-left: 40px;
+    margin-top: 40px;
+    height: 0px;
+    width: 0px;
+
+}
+
+.parent {
+    display: grid;
+    grid-template-columns: 50px 50px;
+    height: 100px;
+    width: 100px;
+    margin-left: 150px;
+    margin-top: 150px;  
+   }
+
+.red,
+.yellow,
+.blue,
+.green {
+       transition-property: transform 1.2s ;
+       transition-duration: 1s;
+       transition-timing-function: ease-out;
+       z-index: 1;
+
+     }
+
+
+.parent:hover > .red {
+    transform-origin: top left;
+    transform: rotate(90deg);
+    transition-timing-function: ease-out;
+    
+}
+
+.parent:hover > .yellow {
+    transform: rotate(-90deg);
+    transform-origin: top right;
+    transition-timing-function: ease-out;
+
+}
+.parent:hover > .blue { 
+    transform: rotate(-90deg);
+    transform-origin: bottom left;
+    transition-timing-function: ease-out;
+}
+.parent:hover > .green{
+    transform: rotate(90deg);
+    transform-origin: bottom right;
+    transition-timing-function: ease-out;
+
+}
+
+
+
+ 
