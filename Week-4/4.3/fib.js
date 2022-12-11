@@ -18,3 +18,4 @@ console.log('The Fibonacci series is :');
 for(let fibNumber of fib){
         console.log(fibNumber)
 }
+//

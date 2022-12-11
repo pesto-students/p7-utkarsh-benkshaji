@@ -1,3 +1,4 @@
+//
 const Person = function() {};
 
 Person.prototype.initialize = function(name, age) {
